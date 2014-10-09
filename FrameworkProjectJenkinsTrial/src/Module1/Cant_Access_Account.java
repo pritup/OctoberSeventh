@@ -5,11 +5,14 @@ import java.io.File;
 import java.io.FileWriter;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class Cant_Access_Account extends Keywords
 {
-	@Test(priority=1,enabled=true)
+//	@Test(priority=1,enabled=true)
 	public static void TestCantaccessaccount()throws Throwable
 	{
 	//Xls_Reader d=new Xls_Reader(System.getProperty("user.dir")+"\\src\\Module1\\Yapmo.xlsx");
@@ -61,8 +64,8 @@ public class Cant_Access_Account extends Keywords
 	myList.add("User is navigated to password reset page with '"+Message+"' message displayed, 'Email Address' text field, 'Send Password Reset' button and 'Return to Login' link clicked.");
 	myList1.add("Pass");
 	//Click on Return To Login Link//
-//	Keywords.ClickLink("ReturnToLogin_Link", "ReturnToLogin_Link");
-//	Thread.sleep(2000);
+	Keywords.ClickLink("ReturnToLogin_Link", "ReturnToLogin_Link");
+	Thread.sleep(2000);
 //	if(driver.findElement(By.xpath(OR.getProperty("SetPassword_Login_Btn"))).isDisplayed())
 //	{
 //		myList.add("'Return to Login' link clicked.");

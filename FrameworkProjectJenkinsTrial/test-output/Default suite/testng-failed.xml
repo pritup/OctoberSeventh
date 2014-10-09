@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Module1.Cant_Access_Account">
+      <class name="Module1.DriverClass">
         <methods>
-          <include name="TestCantaccessaccount"/>
+          <include name="testt"/>
         </methods>
       </class>
     </classes>

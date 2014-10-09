@@ -7,12 +7,17 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.FileWriter;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.opera.core.systems.scope.protos.UmsProtos.Status;
 public class LoginModule extends Keywords
 {
-@Test
+
 public static void LoginTestCase() throws Throwable
 {
 	Xls_Reader d=new Xls_Reader(System.getProperty("user.dir")+"\\src\\Module1\\Yapmo.xlsx");
@@ -45,12 +50,24 @@ public static void LoginTestCase() throws Throwable
 	sb.append("<th>");
 	sb.append("<h3>STATUS</h3>");
 	sb.append("</th>");      
-	List myList = new List();
+	List myList = new List(); 
 	List myList1 = new List();
 	
-	Keywords.navigate();
+	
+	
+	
+//	ProfilesIni profile = new ProfilesIni();
+//	 
+//	FirefoxProfile myprofile = profile.getProfile("profileToolsQA");
+//	 
+//	WebDriver driver = new FirefoxDriver(myprofile);
+	//firefox.exe -p
+	
+	
+	//Keywords.navigate();
 	myList.add("Application opened.User is in"+" "+driver.getTitle()+" "+"page");
 	myList1.add("Pass");
+	
 	//Negative Link
 	try
 	{
