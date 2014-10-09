@@ -8,8 +8,8 @@ public class DriverClass
 @Test
 public static void testt() throws Throwable
 {
-	String Path=System.getProperty("user.dir")+"\\src\\HTML_REPORTS\\Cant_access_Act.htm";
-	String Path1=System.getProperty("user.dir")+"\\src\\HTML_REPORTS\\Login.htm";
+	//String Path=System.getProperty("user.dir")+"\\src\\HTML_REPORTS\\Cant_access_Act.htm";
+	//String Path1=System.getProperty("user.dir")+"\\src\\HTML_REPORTS\\Login.htm";
 	
 	String Path2="FrameworkProjectJenkinsTrial/src/HTML_REPORTS/Cant_access_Act.htm";
 	String Path3="FrameworkProjectJenkinsTrial/src/HTML_REPORTS/Login.htm";
